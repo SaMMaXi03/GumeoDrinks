@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fbfbfb;
+    font-family: Arial;
+}
+
+/* Header */
+
+nav {
+    padding: 10px 40px 10px 70px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+nav ul li.logo_gumeo {
+    flex: 1;
+}
+
+nav ul li.logo_gumeo img {
+    width: 200px;
+}
+
+nav ul div.items {
+    display: inline-flex;
+}
+
+nav ul div.items a {
+    text-decoration: none;
+    font-size: 18px;
+    padding: 0 25px;
+    color: black;
+}
+
+nav ul div.items a:hover {
+    transition: 0.3s;
+    color: darkgrey;
+}
+
+nav ul .search-icon {
+    position: relative;
+    height: 40px;
+    max-width: 350px;
+    width: 180px;
+    margin: 0 30px;
+    border-radius: 20px;
+    background-color: white;
+}
+
+nav ul .search-icon input {
+    position: relative;
+    height: 100%;
+    width: 100%;
+    padding: 0 15px 0 50px;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    border-radius: 20px;
+}
+
+nav ul .search-icon .icon {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+nav ul li a img {
+    width: 1.5em;
+}
+
+@media screen and (max-width: 1052px) {
+    nav {
+        padding: 10px 40px 10px 0px;
+    }
+    nav ul li.logo_gumeo {
+        display: none;
+    }
+}
+
+/* Main */
+
+.row {
+    display: flex;
+    flex-direction: row;
+}
